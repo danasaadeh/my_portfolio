@@ -38,7 +38,7 @@ export const Hero = () => {
 
             <div className="flex flex-wrap gap-4">
               <Button asChild variant="gradient">
-                <a href="/Dana_Saadeh_Final_CV.pdf" download>
+                <a href="/Dana_Saadeh.pdf" download>
                   <Download className="mr-2 h-4 w-4" />
                   Download CV
                 </a>

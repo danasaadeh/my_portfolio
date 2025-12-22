@@ -9,14 +9,31 @@ import foodImg from "@/assets/food-order.png";
 import weatherImg from "@/assets/weather.png";
 import reservaImg from "@/assets/reserva.jpg";
 import medicineImg from "@/assets/pharmadose.png";
-import complaintsImg from "@/assets/complaints2.jpg";
-
+import complaintsImg from "@/assets/compliants.png";
+import bankingImg from "@/assets/bank (1).png";
 type ProjectCategory = "all" | "web" | "mobile";
 
 export const Projects = () => {
   const [activeFilter, setActiveFilter] = useState<ProjectCategory>("all");
 
   const projects = [
+    {
+      title: "Advanced Enterprise Banking System",
+      description:
+        "A mission-critical banking platform featuring complex financial logic, multi-tier transaction approval workflows, and a robust administrative engine. Built with a focus on scalability and security using modern design patterns.",
+      technologies: [
+        "React 19",
+        "TypeScript",
+        "TanStack Router",
+        "Zustand",
+        "TanStack Query",
+        "Tailwind CSS",
+        "i18next",
+      ],
+      image: bankingImg, // Make sure to import your screenshot!
+      year: "2025",
+      category: "web" as const,
+    },
     {
       title: "Government Complaints System",
       description:
